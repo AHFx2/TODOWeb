@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/dca5919471.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">قائمة المهام</h1>
+        <p class="header__description">نظم مهامك واجعل يومك أكثر إنتاجية</p>
+    </header>
+    <main>
+        <form class="main__feildContainer --box">
+            <input type="submit" class="addTask" value="+">
+            <input type="text" class="feild" placeholder="أضف مهمة جديدة...">
+        </form>
+        <div class="main__stats flex-container">
+            <div class="main__stats--item --box totalStats">
+                <div class="number">0</div>
+                <div class="title">المجموع</div>
+            </div>
+            <div class="main__stats--item --box restStats">
+                <div class="number">0</div>
+                <div class="title">المتبقية</div>
+            </div>
+            <div class="main__stats--item --box completeStats">
+                <div class="number">0</div>
+                <div class="title">المكتملة</div>
+            </div>
+        </div>
+        <div class="main__filter --box">
+            <button class="main__filter__type all active">
+                الكل
+                <i class="fa-solid fa-filter icon"></i>
+            </button>
+            <button class="main__filter__type rest">
+                المتبقية
+                <i class="fa-solid fa-spinner icon"></i>
+            </button>
+            <button class="main__filter__type complete">
+                المكتملة
+                <i class="fa-solid fa-check icon"></i>
+            </button>
+        </div>
+        <div class="main__todos">
+            <div class="empty__todos --box">
+                لا توجد مهام. أضف مهمة جديدة للبدء!
+            </div>
+        </div>
+    </main>
+</body>
+</html>
